@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+#game-container {
+    position: relative;
+}
+
+#retry-button {
+    display: none; 
+    position: absolute;
+    left: 50%;
+    top: 70%; 
+    transform: translate(-50%, -50%);
+    padding: 15px 30px;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-color: #ff4444;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+#retry-button:hover {
+    background-color: #cc3333;
+}
+
+#retry-button:active {
+    transform: translate(-50%, -50%) scale(0.95);
+}
